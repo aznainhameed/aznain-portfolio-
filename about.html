@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="About - Aznain Hameed | Showcasing professional SEO, content writing, and web design projects." />
+  <meta name="author" content="Aznain Hameed" />
+  <title>About || Aznain Hameed</title>
+<link rel="stylesheet" href="footer.css">
+<link rel="stylesheet" href="header.css">
+  <style>
+    /* Global Theme */
+    :root {
+      --primary: #2563eb;
+      --primary-dark: #1e3a8a;
+      --text-dark: #0f172a;
+      --text-light: #475569;
+      --bg: #f8fbff;
+      --white: #ffffff;
+      --shadow: rgba(0, 0, 0, 0.08);
+    }
+    
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Poppins", sans-serif;
+    }
+
+    body {
+      background-color: var(--bg);
+      color: var(--text-dark);
+      line-height: 1.6;
+    }
+
+    /* Header */
+    header {
+      background-color: var(--white);
+      box-shadow: 0 2px 10px var(--shadow);
+      padding: 20px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    header h1 {
+      font-size: 1.6rem;
+      color: var(--primary);
+    }
+
+    nav a {
+      text-decoration: none;
+      color: var(--text-dark);
+      margin: 0 15px;
+      font-weight: 500;
+      transition: 0.3s;
+    }
+
+    nav a:hover {
+      color: var(--primary);
+    }
+
+
+    /* About Hero */
+    .about-hero {
+      text-align: center;
+      padding: 80px 20px;
+      background: linear-gradient(135deg, #e0ebff, #ffffff);
+    }
+
+    .about-hero h2 {
+      font-size: 2.5rem;
+      color: var(--text-dark);
+    }
+
+    .about-hero p {
+      max-width: 600px;
+      margin: 20px auto;
+      color: var(--text-light);
+    }
+
+    /* Projects Section */
+    .projects-section {
+      text-align: center;
+      padding: 80px 20px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .projects-section h3 {
+      font-size: 2rem;
+      color: var(--text-dark);
+      margin-bottom: 10px;
+    }
+
+    .underline {
+      width: 80px;
+      height: 4px;
+      background-color: var(--primary);
+      margin: 0.5rem auto 2.5rem;
+      border-radius: 4px;
+    }
+
+    .projects-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 30px;
+      margin-top: 40px;
+    }
+
+    .project-card {
+      background-color: var(--white);
+      border-radius: 15px;
+      box-shadow: 0 4px 15px var(--shadow);
+      overflow: hidden;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .project-card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 8px 25px var(--shadow);
+    }
+
+    .project-card img {
+      width: 100%;
+      height: 220px;
+      object-fit: cover;
+    }
+
+    .project-info {
+      padding: 20px;
+    }
+
+    .project-info h4 {
+      font-size: 1.2rem;
+      color: var(--primary);
+      margin-bottom: 10px;
+    }
+
+    .project-info p {
+      color: var(--text-light);
+      font-size: 0.95rem;
+    }
+    /* Footer */
+    footer {
+      background-color: var(--text-dark);
+      color: white;
+      padding: 60px 20px 30px;
+      text-align: center;
+      margin-top: 80px;
+    }
+
+    .footer-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 40px;
+      margin-bottom: 40px;
+    }
+
+    .footer-column {
+      max-width: 300px;
+    }
+
+    .footer-column h4 {
+      margin-bottom: 15px;
+      color: var(--primary);
+      font-size: 1.2rem;
+    }
+
+    .footer-column ul {
+      list-style: none;
+    }
+
+    .footer-column ul li {
+      margin-bottom: 10px;
+    }
+
+    .footer-column ul li a {
+      color: #e2e8f0;
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+
+    .footer-column ul li a:hover {
+      color: white;
+    }
+
+    .get-touch-btn {
+      display: inline-block;
+      margin-top: 15px;
+      padding: 10px 25px;
+      background-color: var(--primary);
+      color: white;
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: 500;
+      transition: 0.3s ease;
+    }
+
+    .get-touch-btn:hover {
+      background-color: var(--primary-dark);
+      transform: translateY(-3px);
+    }
+
+    footer p {
+      margin-top: 10px;
+      color: #e2e8f0;
+    }
+
+    @media (max-width: 768px) {
+      header {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      nav {
+        margin-top: 10px;
+      }
+
+      .footer-container {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+   
+
+  
+    
+  </style>
+</head>
+
+<body>
+  <!-- Header -->
+  <header>
+    <h1>Aznain Hameed</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <a href="contcet.html">Contact</a>
+    </nav>
+  </header>
+
+  <!-- About Hero -->
+  <section class="about-hero">
+    <h2>About My Work</h2>
+    <p>Discover some of my best SEO, content writing, and web design projects that showcase my skills and creativity.</p>
+  </section>
+
+  <!-- Projects Section -->
+  <section class="projects-section">
+    <h3>Featured Projects</h3>
+    <div class="underline"></div>
+
+    <div class="projects-grid">
+      <div class="project-card">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQ-pMMcOodhk5u7pM7ACWfyrVUgljPIMIt3Q&s" alt="SEO Project" />
+        <div class="project-info">
+          <h4>SEO Optimization for E-commerce</h4>
+          <p>Boosted organic traffic by 300% for a fashion brand through advanced on-page and technical SEO strategies.</p>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <img src="https://cdn.pixabay.com/photo/2016/11/19/14/00/code-1839406_1280.jpg" alt="Website Design" />
+        <div class="project-info">
+          <h4>Portfolio Website Design</h4>
+          <p>Designed a modern, responsive personal website for a client to enhance professional branding.</p>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <img src="https://www.logical-inc.com/wp-content/uploads/LogicalBlog-ContentStrategy.webp" alt="Content Project" />
+        <div class="project-info">
+          <h4>Content Strategy for Blog</h4>
+          <p>Developed a full content strategy that increased engagement and improved keyword rankings significantly.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  
+     <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-column">
+        <h3><span class="highlight">Aznain</span> Hameed</h3>
+        <p><a href="#">SEO Expert, Content Writer, and Web Designer helping businesses grow online with strategic solutions.</a></p>
+      </div>
+
+      <div class="footer-column">
+        <h4>Services</h4>
+        <ul>
+          <li><a href="#">SEO Optimization</a></li>
+          <li><a href="#">Content Writing</a></li>
+          <li><a href="#">WordPress Design</a></li>
+          <li><a href="#">AdSense Approval</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-column">
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="mailto:aznainhameed@gmail.com">aznainhameed@gmail.com</a></li>
+          <li><a href="tel:+923060085141">+923060085141</a></li>
+          <li><a href="#">LinkedIn: Aznain Hameed</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <h3 style="text-align: center;">Aznain Hameed</h3>
+    <p style="text-align: center;">© 2025 Aznain Hameed. All rights reserved. Built with passion for digital excellence.</p>
+  </footer>
+</body>
+</html>

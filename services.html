@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Professional SEO Services by Aznain Hameed — Improve visibility, rank higher, and grow your business online." />
+  <meta name="author" content="Aznain Hameed" />
+  <title>SEO Services || Aznain Hameed</title>
+
+  <style>
+    :root {
+      --primary: #2563eb;
+      --primary-dark: #1e3a8a;
+      --text-dark: #0f172a;
+      --text-light: #475569;
+      --bg: #f8fbff;
+      --white: #ffffff;
+      --shadow: rgba(0, 0, 0, 0.08);
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Poppins", sans-serif;
+    }
+
+    body {
+      background-color: var(--bg);
+      color: var(--text-dark);
+      line-height: 1.6;
+    }
+
+    header {
+      background-color: var(--white);
+      box-shadow: 0 2px 10px var(--shadow);
+      padding: 20px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    header h1 {
+      color: var(--primary);
+      font-size: 1.6rem;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: var(--text-dark);
+      margin: 0 15px;
+      font-weight: 500;
+      transition: 0.3s;
+    }
+
+    nav a:hover {
+      color: var(--primary);
+    }
+
+    /* Hero Section */
+    .hero {
+      text-align: center;
+      padding: 80px 20px;
+      background: linear-gradient(135deg, #e0ebff, #ffffff);
+    }
+
+    .hero h2 {
+      font-size: 2.5rem;
+      color: var(--text-dark);
+    }
+
+    .hero p {
+      max-width: 700px;
+      margin: 20px auto;
+      color: var(--text-light);
+    }
+
+    /* Services Section */
+    .services {
+      max-width: 1200px;
+      margin: 60px auto;
+      padding: 20px;
+    }
+
+    .services h3 {
+      text-align: center;
+      font-size: 2rem;
+      color: var(--text-dark);
+      margin-bottom: 10px;
+    }
+
+    .underline {
+      width: 80px;
+      height: 4px;
+      background-color: var(--primary);
+      margin: 0.5rem auto 2.5rem;
+      border-radius: 4px;
+    }
+
+    .service-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 30px;
+    }
+
+    .service-card {
+      background-color: var(--white);
+      border-radius: 15px;
+      overflow: hidden;
+      box-shadow: 0 8px 25px var(--shadow);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .service-card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 10px 35px var(--shadow);
+    }
+
+    .service-card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .service-content {
+      padding: 25px;
+    }
+
+    .service-content h4 {
+      color: var(--primary);
+      font-size: 1.3rem;
+      margin-bottom: 10px;
+    }
+
+    .service-content p {
+      color: var(--text-light);
+      font-size: 0.95rem;
+    }
+
+    /* CTA Section */
+    .cta {
+      background: linear-gradient(135deg, #2563eb, #1e3a8a);
+      color: white;
+      text-align: center;
+      padding: 60px 20px;
+      border-radius: 15px;
+      margin: 80px 20px;
+    }
+
+    .cta h3 {
+      font-size: 2rem;
+      margin-bottom: 15px;
+    }
+
+    .cta p {
+      max-width: 600px;
+      margin: 0 auto 25px;
+    }
+
+    .cta a {
+      display: inline-block;
+      background-color: white;
+      color: var(--primary-dark);
+      padding: 12px 25px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: 600;
+      transition: background 0.3s ease;
+    }
+
+    .cta a:hover {
+      background-color: #e0ebff;
+    }
+
+    /* Footer */
+    footer {
+      background-color: var(--text-dark);
+      color: white;
+      padding: 60px 20px 30px;
+      text-align: center;
+      margin-top: 80px;
+    }
+
+    .footer-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 40px;
+      margin-bottom: 40px;
+    }
+
+    .footer-column {
+      max-width: 300px;
+    }
+
+    .footer-column h4 {
+      margin-bottom: 15px;
+      color: var(--primary);
+      font-size: 1.2rem;
+    }
+
+    .footer-column ul {
+      list-style: none;
+    }
+
+    .footer-column ul li {
+      margin-bottom: 10px;
+    }
+
+    .footer-column ul li a {
+      color: #e2e8f0;
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+
+    .footer-column ul li a:hover {
+      color: white;
+    }
+
+    .get-touch-btn {
+      display: inline-block;
+      margin-top: 15px;
+      padding: 10px 25px;
+      background-color: var(--primary);
+      color: white;
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: 500;
+      transition: 0.3s ease;
+    }
+
+    .get-touch-btn:hover {
+      background-color: var(--primary-dark);
+      transform: translateY(-3px);
+    }
+
+    footer p {
+      margin-top: 10px;
+      color: #e2e8f0;
+    }
+
+    @media (max-width: 768px) {
+      header {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      nav {
+        margin-top: 10px;
+      }
+
+      .footer-container {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <h1>Aznain Hameed</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <h2>SEO Services</h2>
+    <p>Boost your online visibility and drive more organic traffic with expert SEO strategies that truly work.</p>
+  </section>
+
+  <!-- Services Section -->
+  <section class="services">
+    <h3>What’s Included in My SEO Services</h3>
+    <div class="underline"></div>
+
+    <div class="service-grid">
+      <div class="service-card">
+        <img src="https://i0.wp.com/www.shoutmeloud.com/wp-content/uploads/2020/07/keyword-research-for-seo.jpeg?fit=1280%2C720&ssl=1" alt="Keyword Research">
+        <div class="service-content">
+          <h4>Keyword Research</h4>
+          <p>In-depth analysis to identify high-impact keywords that help your business rank higher on Google.</p>
+        </div>
+      </div>
+
+      <div class="service-card">
+        <img src="https://media.geeksforgeeks.org/wp-content/uploads/20240124121809/on-page-seo.jpeg" alt="On Page SEO">
+        <div class="service-content">
+          <h4>On-Page Optimization</h4>
+          <p>Optimize titles, headings, and content structure to improve search engine visibility and user experience.</p>
+        </div>
+      </div>
+
+      <div class="service-card">
+        <img src="https://seotesting.com/wp-content/uploads/2024/04/Off-Page-SEO.jpeg" alt="Off Page SEO">
+        <div class="service-content">
+          <h4>Off-Page SEO</h4>
+          <p>Build high-quality backlinks, strengthen domain authority, and enhance brand reputation across the web.</p>
+        </div>
+      </div>
+
+      <div class="service-card">
+        <img src="https://www.hurix.com/wp-content/uploads/2019/06/7-Highly-Effective-Tips-on-Technical-SEO-2.jpg" alt="Technical SEO">
+        <div class="service-content">
+          <h4>Technical SEO</h4>
+          <p>Improve site speed, mobile-friendliness, indexing, and overall website health for better rankings.</p>
+        </div>
+      </div>
+
+      <div class="service-card">
+        <img src="https://mikekhorev.com/wp-content/uploads/2019/03/Local_seo_banner-3.png" alt="Local SEO">
+        <div class="service-content">
+          <h4>Local SEO</h4>
+          <p>Dominate your local search results and attract nearby customers with optimized Google Business Profiles.</p>
+        </div>
+      </div>
+
+      <div class="service-card">
+        <img src="https://www.pixartprinting.co.uk/blog/wp-content/uploads/2022/11/seo-audit.jpg" alt="SEO Audit">
+        <div class="service-content">
+          <h4>SEO Audit</h4>
+          <p>Comprehensive analysis of your website to identify opportunities for growth and technical improvements.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta">
+    <h3>Ready to Rank Higher?</h3>
+    <p>Let’s work together to boost your organic visibility, traffic, and revenue. Contact me today to get started.</p>
+    <a href="https://wa.me/923060085141?text=Hello%20Aznain,%20I%20visited%20your%20website%20and%20want%20to%20get%20in%20touch!" target="_blank" class="btn-outline">Get in Touch</a>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-container">
+      <div class="footer-column">
+        <h4>About Me</h4>
+        <p>I'm Aznain Hameed — SEO Expert, Content Writer, and Web Designer dedicated to helping brands grow online.</p>
+        
+      </div>
+
+      <div class="footer-column">
+        <h4>Services</h4>
+        <ul>
+          <li><a href="#">SEO Optimization</a></li>
+          <li><a href="#">Content Writing</a></li>
+          <li><a href="#">Web Design</a></li>
+          <li><a href="#">AdSense Help</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-column">
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="mailto:aznainhameed@gmail.com">aznainhameed@gmail.com</a></li>
+          <li><a href="tel:+923060085141">+92 306 0085141</a></li>
+          <li><a href="#">LinkedIn: Aznain Hameed</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <p>© 2025 Aznain Hameed. All rights reserved. Empowering brands with smart SEO strategies.</p>
+  </footer>
+
+</body>
+</html>
